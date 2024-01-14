@@ -10,7 +10,7 @@
   <h1>Real-Time Data</h1>
   <script src="https://cdn.socket.io/4.7.3/socket.io.min.js"></script>
   <script>
-    const socket = io();
+    const socket = io('https://satcard-backend-abhiram.onrender.com/');
 
     socket.on('accelerometer', (data) => {
       console.log('Accelerometer Data:', data);
